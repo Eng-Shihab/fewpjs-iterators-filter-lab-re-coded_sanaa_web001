@@ -6,9 +6,9 @@ function findMatching (drivers,name) {
   });
 }
 
-function fuzzyMatch (list,letters) {
+function fuzzyMatch (drivers,letters) {
   let lengthOfName = letters.length;
-  return list.filter(function (driverName) {
+  return drivers.filter(function (driverName) {
     return driverName.slice(0, lengthOfName) === letters;
   });
 }
