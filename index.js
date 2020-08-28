@@ -13,7 +13,7 @@ function fuzzyMatch (list, partialName) {
   });
 }
 
-function matchName (list, name) {
+function matchName (drivers, name) {
   return list.filter(function (driver) {
     return driver.name.toLowerCase() === name.toLowerCase();
   });
